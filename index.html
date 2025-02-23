@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="utils.js" defer></script>
+</head>
+<body>
+
+    <div x-data="{ name: 'Click here to get a name from the MSU Basketball Team!' }">
+        <h1 x-text="name"></h1>
+        <button @click="name = getRandomName()">Generate Name</button>
+    </div>
+
+</body>
+</html>
